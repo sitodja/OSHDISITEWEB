@@ -1,0 +1,41 @@
+# ==============================================================
+# ROBOTS.TXT OFFICIEL POUR OSHDI (https://oshdi.org)
+# Optimisation Googlebot & Moteurs de Recherche Internationaux
+# ==============================================================
+
+User-agent: *
+Allow: /
+Allow: /assets/
+Allow: /assets/css/
+Allow: /assets/js/
+Allow: /assets/images/
+
+# Interdictions de crawl pour les zones privées, administratives et API
+Disallow: /admin_paiements.php
+Disallow: /compte.php
+Disallow: /bordereau_pdf.php
+Disallow: /recu_don.php
+Disallow: /logout.php
+Disallow: /api/
+Disallow: /config/
+Disallow: /database/
+Disallow: /logs/
+Disallow: /scratch/
+Disallow: /*?ref=*
+
+# Optimisation Googlebot spécifique
+User-agent: Googlebot
+Allow: /
+Disallow: /admin_paiements.php
+Disallow: /compte.php
+Disallow: /bordereau_pdf.php
+Disallow: /recu_don.php
+Disallow: /api/
+Disallow: /config/
+
+# Optimisation Googlebot-Image
+User-agent: Googlebot-Image
+Allow: /assets/images/
+
+# Référence officielle du Sitemap XML
+Sitemap: https://oshdi.org/sitemap.xml
